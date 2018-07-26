@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>西柚图书馆</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../less/css/main.min.css">
+    <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/min/main.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div id="borrow_now">
+            <div class="header">
+                <span class="info"></span>
+                <a href="index.html" class="exit">退出
+				</a>
+            </div>
+            <div class="content">
+                <h3 class="topic">您的借阅情况如下</h3>
+                <div class="borrow_main">
+                    <div class="borrow_info">
+                        <div class="borrow_infoleft">
+                            <p class="left_top">已借图书：
+                                <span class="blue"></span> 本
+                            </p>
+                            <p class="left_bottom">续借图书：
+                                <span class="red"></span> 本
+                            </p>
+                        </div>
+                        <div class="borrow_inforight">
+                            <p class="right_top">剩余可借：
+                                <span class="green"></span> 本
+                            </p>
+                            <p class="right_bottom">超期图书：
+                                <span class="yellow"></span> 本
+                            </p>
+                        </div>
+                    </div>
+                    <div class="borrow_list">
+                    </div>
+                </div>
+            </div>
+            <div class="foot">
+                <ul class="search_list">
+                    <li class="button_borrow"><a href="#borrow_now">已借图书</a></li>
+                    <li class="button_book"><a href="#book_search">图书检索</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="book_search">
+            <div class="search_content">
+                <div class="search_pannel">
+                    <img src="../picture/5.png" class="search_icon" />
+                    <input type="text" class="search_text" placeholder="请输入所要查找的书籍信息" />
+                    <input type="submit" class="search_submit" />
+                </div>
+                <div class="search_book">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

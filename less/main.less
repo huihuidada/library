@@ -1,0 +1,268 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    .main{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        #borrow_now{
+            // height: 100%;
+            .header{
+                position: fixed;
+                top: 0;
+                width: 100%;
+                height: 4rem;
+                background-color: #EAE3EA;
+                border-bottom: 1px solid #DBDBDB;
+                z-index: 2;
+                .info{
+                    display: inline-block;
+                    line-height: 4rem;
+                    height: 4rem;
+                    margin-left: 6rem;
+                    font-size: 1.2rem;
+                }
+                .exit{
+                    text-decoration: none;
+                    display: block;
+                    float: right;
+                    margin-top: 1rem;
+                    margin-right: 0.5rem;
+                    height: 2rem;
+                    line-height: 2rem;
+                    text-indent: 23px;
+                    border: solid 1px;
+                    border-radius: 5px;
+                    padding: 0 0.3rem;
+                    background: url("../../picture/4.png") 0 center no-repeat;
+                    background-size: 22px;
+                    color: black;
+                    border-color: #333;
+                    font-size: 0.9rem;
+                }
+            }
+            .content {
+                margin-top: 4rem;
+                width: 100%;
+                // height: calc(~'100% - 6rem');
+                .topic {
+                    text-align: center;
+                    margin: 0.8rem;
+                }
+                .borrow_main {
+                    width: 100%;
+                    background-color: rgb(234, 227, 234);
+                    .borrow_info {
+                        position: relative;
+                        height: 8rem;
+                    }
+                    
+                    .borrow_infoleft {
+                        width: 50%;
+                        float: left;
+                        .left_top {
+                            padding: 1rem;
+                        }
+                        
+                        .left_bottom {
+                            padding: 1rem;
+                            padding-top: 0;
+                        }
+                    }
+                    .borrow_inforight {
+                        width: 50%;
+                        float: right;
+                        .right_top {
+                            padding: 1rem;
+                        }
+                        
+                        .right_bottom {
+                            padding: 1rem;
+                            padding-top: 0;
+                        }
+                    }
+                    .borrow_list {
+                        padding: 10px;
+                        .book {
+                            margin-bottom: 0.5rem;
+                            border-radius: 10px;
+                            border: solid 1px rgb(22, 160, 92);
+                            border-top: 3px solid rgb(22, 160, 92);
+                            /*background-color: white;*/
+                            .bookContent {
+                                padding: 10 15px;
+                                margin-bottom: 10px;
+                                overflow: hidden;
+                            }
+                            .book_name {
+                                padding: 10px 5px;
+                                font-weight: bolder;
+                            }
+                            .book_name1 {
+                                padding: 10px 5px;
+                                font-weight: bolder;
+                            }
+                            
+                            .book_name1 a {
+                                /*text-decoration: none;*/
+                                color: black;
+                            }
+                            
+                            .book_time {
+                                padding-left: 5px;
+                                color: red;
+                            }
+                            
+                            .button_reborrow {
+                                position: relative;
+                                float: right;
+                                right: 1rem;
+                                border: solid 1px;
+                                border-radius: 5px;
+                                padding: 0.3rem;
+                                text-indent: 0;
+                            }
+                            
+                            .book_state {
+                                padding: 10px 5px;
+                            }
+                            
+                            .book_stateName {
+                                color: red;
+                            }
+                            
+                            .blue {
+                                color: blue;
+                                font-weight: bolder;
+                            }
+                            
+                            .green {
+                                color: green;
+                                font-weight: bolder;
+                            }
+                            
+                            .red {
+                                color: red;
+                                font-weight: bolder;
+                            }
+                            
+                            .yellow {
+                                color: yellow;
+                                font-weight: bolder;
+                            }
+                        }
+                    }
+                }
+            }
+            .foot {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                z-index: 2;
+                border-top: 1px solid #DBDBDB;
+                .search_list {
+                    list-style-type: none;
+                    width: 100%;
+                    position: relative;
+                    left: -2.5rem;
+                    margin: 0;
+                }
+                .button_borrow {
+                    display: inline-block;
+                    text-align: center;
+                    width: 50%;
+                    float: left;
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        padding: 0.5rem 0 0.5rem 0;
+                        font-weight: bolder;
+                        background-color: rgb(234, 227, 234);
+                        color: black;
+                    }
+                }
+                .button_book {
+                    display: inline-block;
+                    text-align: center;
+                    width: 50%;
+                    float: right;
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        padding: 0.5rem 0 0.5rem 0;
+                        font-weight: bolder;
+                        // background-color: rgb(234, 227, 234);
+                        color: black;
+                    }
+                }
+            }
+        }
+        #book_search{
+            .search_content {
+                display: none;
+                position: absolute;
+                top: 4rem;
+                padding: 0 2%;
+                width: 96%;
+                .search_pannel {
+                    position: relative;
+                    width: 100%;
+                    margin: 0;
+                    margin-top: 2rem;
+                    .search_icon {
+                        position: absolute;
+                        padding-top: 0.6rem;
+                        padding-left: 0.5rem;
+                    }
+                    .search_text {
+                        width: 91%;
+                        line-height: 2rem;
+                        padding-left: 8%;
+                        outline: 0;
+                        border-left: none;
+                        border-right: none;
+                        border-top: none;
+                        font-size: 1rem;
+                    }
+                    .search_submit {
+                        position: absolute;
+                        margin-top: 2rem;
+                        left: 50%;
+                        margin-left: -4rem;
+                        width: 8rem;
+                        height: 2rem;
+                        background-color: #EAE3EA;
+                        border-radius: 5px;
+                        outline: 0;
+                        border: none;
+                    }
+                }
+                .search_book {
+                    margin-top: 8rem;
+                    margin-bottom: 5rem;
+                }
+                
+                .book {
+                    margin-bottom: 0.5rem;
+                    border-radius: 10px;
+                    border: solid 1px rgb(22, 160, 92);
+                    border-top: 3px solid rgb(22, 160, 92);
+                    /*background-color: white;*/
+                    .bookContent {
+                        padding: 10 15px;
+                        margin-bottom: 10px;
+                        overflow: hidden;
+                        .book_name1 {
+                            padding: 10px 5px;
+                            font-weight: bolder;
+                            a{
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
